@@ -1,0 +1,8 @@
+{
+  "name": "Catalyize",
+  "description": "Apresentação comercial interativa da Catalyize com paleta moderna azul, calculadora de ROI e estruturação de crescimento comercial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

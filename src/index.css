@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0B0B0B;
+    color: #F3F4F6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom high-ticket typography rules */
+  h1, h2, h3, .font-display {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Custom premium visual effects */
+.bg-noise {
+  background-image: radial-gradient(#ffffff0a 1px, transparent 0), radial-gradient(#ffffff0a 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.glow-blue {
+  box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.25);
+}
+
+.glow-blue-strong {
+  box-shadow: 0 0 50px -5px rgba(59, 130, 246, 0.45);
+}
+
+.text-glow {
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.45);
+}
+
+.glass-premium {
+  background: rgba(15, 15, 15, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-premium-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-premium-hover:hover {
+  background: rgba(20, 20, 20, 0.8);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px -10px rgba(59, 130, 246, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Hide default browser scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom grid decorations */
+.grid-lines {
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Fade up keyframe animations */
+@keyframes fadeUpAnim {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUpAnim 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
